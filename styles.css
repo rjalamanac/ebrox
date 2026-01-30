@@ -235,3 +235,17 @@ footer {
   object-fit: cover; /* Recorte elegante */
   border-radius: 8px;
 }
+
+.footer {
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+
+.footer-link {
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
