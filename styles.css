@@ -1,11 +1,10 @@
 :root {
-  --black: #0b0b0b;
-  --dark: #141414;
+  --black: #1b2230; /* antes #0b0b0b */
+  --dark: #222a3a; /* antes #141414 */
   --orange: #f36c21;
   --red: #c62828;
-  --white: #f5f5f5;
-  --gray: #bdbdbd;
-
+  --white: #e6e8ee; /* blanco menos agresivo */
+  --gray: #b7bcc8;
   --max-width: 1200px;
 }
 
@@ -24,9 +23,10 @@ body {
     "Segoe UI",
     Roboto,
     sans-serif;
-  background: linear-gradient(180deg, #0f172a 0%, #111111 100%);
+  background: radial-gradient(circle at top, #2b3446, #111827);
   color: var(--white);
   line-height: 1.6;
+  --surface: #1f2937;
 }
 
 img {
@@ -65,7 +65,7 @@ p {
 .hero {
   min-height: 100vh;
   background:
-    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
+    linear-gradient(rgba(17, 24, 39, 0.75), rgba(17, 24, 39, 0.9)),
     url("img/img2.png") center / cover no-repeat;
   display: flex;
   align-items: center;
@@ -105,7 +105,7 @@ p {
 
 /* SECTIONS */
 .dark-section {
-  background: var(--dark);
+  background: linear-gradient(180deg, #1b2230, #111827);
 }
 
 /* GRID */
@@ -120,7 +120,7 @@ p {
 
 /* CARD */
 .card {
-  background: var(--black);
+  background: #1f2937;
   border-left: 4px solid var(--orange);
   padding: 1.5rem;
   border-radius: 4px;
@@ -151,7 +151,7 @@ td {
 }
 
 th {
-  background: #1c1c1c;
+  background: #2a3446;
   font-weight: 600;
 }
 
@@ -239,6 +239,7 @@ footer {
 .footer {
   text-align: center;
   padding: 1.5rem 1rem;
+  background: #1a2130;
 }
 
 .footer-link {
