@@ -430,32 +430,39 @@ footer {
   text-align: center;
 }
 
-.footer-author .love {
-  color: #ff4a4a;
-  font-size: 1.1rem;
+.footer-author p {
+  margin: 0.4rem 0;
+}
+
+.author-links {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
 }
 
 .author-links a {
-  color: #ccc;
   text-decoration: none;
-  margin: 0 0.3rem;
+  font-weight: 500;
 }
 
-.author-links a:hover {
-  color: #fff;
+.love {
+  display: inline-block;
+  margin: 0 3px;
 }
 
-.footer-bottom {
-  text-align: center;
-  margin-top: 40px;
-  padding-top: 20px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  font-size: 0.9rem;
-  color: #aaa;
-}
-
+/* Mejor comportamiento en móvil */
 @media (max-width: 600px) {
   .footer-author {
-    text-align: left;
+    margin-top: 1rem;
+  }
+
+  .author-links {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .author-links a::before {
+    content: "🔗 ";
   }
 }
