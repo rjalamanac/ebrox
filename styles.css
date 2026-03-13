@@ -24,7 +24,7 @@ body {
     "Segoe UI",
     Roboto,
     sans-serif;
-  background: var(--black);
+  background: linear-gradient(180deg, #0f172a 0%, #111111 100%);
   color: var(--white);
   line-height: 1.6;
 }
