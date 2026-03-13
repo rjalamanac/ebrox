@@ -457,6 +457,10 @@ footer {
     margin-top: 1rem;
   }
 
+  ul {
+    list-style-type: none;
+  }
+
   .author-links {
     flex-direction: column;
     gap: 6px;
@@ -464,5 +468,8 @@ footer {
 
   .author-links a::before {
     content: "🔗 ";
+  }
+  .separator {
+    display: none;
   }
 }
