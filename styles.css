@@ -457,3 +457,117 @@ footer,
     grid-template-columns: 1fr;
   }
 }
+
+.enlaces-directos-mapa {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+.enlaces-directos-mapa li {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 12px 16px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  font-size: 1.05rem;
+}
+
+.enlaces-directos-mapa a {
+  color: #4db8ff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.enlaces-directos-mapa a:hover {
+  text-decoration: underline;
+}
+
+/* Lista y alineación */
+.social-links {
+  list-style: none;
+  padding-left: 0;
+  margin: 12px 0 0;
+  display: grid;
+  gap: 10px;
+}
+
+/* Enlace con icono */
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.06);
+  transition:
+    transform 0.08s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+/* Texto */
+.social-link .label {
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+/* Iconos */
+.icon {
+  width: 19px;
+  height: 19px;
+  flex: 0 0 19px;
+}
+
+/* Efectos al pasar el ratón */
+.social-link:hover {
+  background: rgba(255, 255, 255, 0.12);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+/* Modo alto contraste opcional (si usas tema claro) */
+.footer-col.light .social-link .label {
+  color: #111;
+}
+.footer-col.light .social-link {
+  background: rgba(0, 0, 0, 0.06);
+}
+.footer-col.light .social-link:hover {
+  background: rgba(0, 0, 0, 0.12);
+}
+
+/* Tamaño, alineación y separación de los iconos inline */
+.with-icon {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* espacio entre icono, texto y enlace */
+  flex-wrap: wrap; /* que no desborde en móvil */
+  margin: 0.5rem 0;
+}
+
+.with-icon .icon-inline {
+  display: inline-block;
+  width: 22px; /* ajusta si quieres más grande/pequeño */
+  height: 22px; /* mantener cuadrado */
+  object-fit: contain;
+  vertical-align: middle;
+  border-radius: 4px; /* opcional, suaviza bordes si el jpeg es cuadrado */
+}
+
+/* Ajuste fino del texto para que no se pegue al icono */
+.with-icon span {
+  font-weight: 600;
+}
+
+/* Accesibilidad: foco visible en enlaces */
+.with-icon a:focus {
+  outline: 2px solid #222;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Opcional: ligera separación vertical entre grupos de enlaces */
+.container p.with-icon + p.with-icon {
+  margin-top: 0.25rem;
+}
